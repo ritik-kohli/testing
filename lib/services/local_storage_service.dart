@@ -1,5 +1,3 @@
-// lib/services/local_storage_service.dart
-
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/submission.dart';
@@ -26,4 +24,10 @@ class LocalStorageService {
     submissions.add(submission);
     await saveLocalSubmissions(submissions);
   }
+
+  // Future<void> upadeSubmissionToLocalList(Submission submission) async {
+  //   final submissions = await loadLocalSubmissions();
+  //   submissions.add(submission);
+  //   await saveLocalSubmissions(submissions);
+  // }
 }

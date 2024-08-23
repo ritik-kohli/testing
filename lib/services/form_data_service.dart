@@ -1,19 +1,17 @@
-// lib/services/form_data_service.dart
-
 import 'package:shared_preferences/shared_preferences.dart';
 
 class FormDataService {
   Future<void> saveFormData({
-    required String firstName,
-    required String lastName,
-    required String email,
-    required String message,
+    String? firstName,
+    String? lastName,
+    String? email,
+    String? message,
   }) async {
     final prefs = await SharedPreferences.getInstance();
-    await prefs.setString('first_name', firstName);
-    await prefs.setString('last_name', lastName);
-    await prefs.setString('email', email);
-    await prefs.setString('message', message);
+    await prefs.setString('first_name', firstName!);
+    await prefs.setString('last_name', lastName!);
+    await prefs.setString('email', email!);
+    await prefs.setString('message', message!);
   }
 
   Future<Map<String, String>> loadFormData() async {
