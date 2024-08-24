@@ -25,10 +25,10 @@ Future<void> checkConnectivityAndSync() async {
         for (var submission in localSubmissions) {
           submission.isSynced = true; // Mark as synced
         }
+
         await LocalStorageService().saveLocalSubmissions(localSubmissions);
-        controller.refreshSubmissions();
-      }
-      
+        await controller.refreshSubmissions();
+      }      
     }
   });
 }

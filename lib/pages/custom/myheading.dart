@@ -12,7 +12,7 @@ class Myheading extends StatelessWidget {
       title,
       style: TextStyle(
         fontSize: size,
-        fontWeight: FontWeight.bold
+        fontWeight: FontWeight.normal
       ),
     );
   }

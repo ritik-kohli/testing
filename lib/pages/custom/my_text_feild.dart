@@ -16,7 +16,7 @@ class MyTextFeild extends StatelessWidget {
       decoration: InputDecoration(
         contentPadding: const EdgeInsets.only(top: 12,bottom: 12,left: 16,right: 16),
         hintText: hintText,
-        hintStyle: const TextStyle(color: Colors.grey),
+        hintStyle: const TextStyle(color: Colors.grey, fontWeight: FontWeight.normal),
         border: OutlineInputBorder(
           borderSide: const BorderSide(color: Colors.black, width: 0.5),
           borderRadius: BorderRadius.circular(4),

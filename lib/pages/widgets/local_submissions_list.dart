@@ -73,7 +73,7 @@ class LocalSubmissionsList extends StatelessWidget {
                             ],
                           ),
                           if (!submission.isSynced)
-                            const Icon(Icons.sync_problem, color: Colors.red),
+                            const Icon(Icons.sync_problem, color: Colors.black),
                         ],
                       ),
                     ],
